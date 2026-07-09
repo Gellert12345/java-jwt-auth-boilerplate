@@ -1,2 +1,2 @@
 # java-jwt-auth-boilerplate
-"Secure Java auth boilerplate using Spring Boot, Spring Security, JWT, and Mail Starter. Includes a simple frontend client for demonstration."
+Secure, production-ready Java authentication boilerplate built with Spring Boot, Spring Security, JWT, and PostgreSQL. Features a stateless auth flow, Java Mail integration for user verification, and a modern web frontend client.
