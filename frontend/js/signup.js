@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded',function () {
             setTimeout(() => {
                 signupForm.classList.remove('shake');
             }, 1000);
-        }
-    })
+        };
+    });
 
 
 
