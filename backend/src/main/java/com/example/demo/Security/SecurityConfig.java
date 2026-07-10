@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
+//
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -23,6 +24,7 @@ public class SecurityConfig {
                     registry.anyRequest().authenticated();
                 })
 
-                .build();
+                .build(); // spring securty inditása (ami előte van az csak az dekraéljuk hogy az
+                          // alapéréekmezet helyett mi fusson)
     }
 }
