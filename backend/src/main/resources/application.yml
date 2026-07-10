@@ -5,9 +5,9 @@ spring:
       include-binding-errors: always
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/registration
-    username: YOUR_USERNAME
-    password: YOUR_PASSWORD
+    url: jdbc:postgresql://localhost:5431/registration
+    username: postgres
+    password:
 
   jpa:
     hibernate:
