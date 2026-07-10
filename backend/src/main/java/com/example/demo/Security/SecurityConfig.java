@@ -14,8 +14,15 @@ public class SecurityConfig {
         return httpSecurity
                 .formLogin(httpForm -> {
                     httpForm
-                            .loginPage("/login").permitAll();
+                            // ezel jelzed hogy nem a beéptett login akarod hasznali hanem amit megirtal a
+                            // /logni API endpointra
+                            .loginPage("/login").permitAll(); // permintAll => nem kell semmi ellenerőzés hogy elérjed
                 })
+                .authorizeHttpRequests(registry -> {
+                    registry.requestMatchers("/req/signup").permitAll();
+                    registry.anyRequest().authenticated();
+                })
+
                 .build();
     }
 }
