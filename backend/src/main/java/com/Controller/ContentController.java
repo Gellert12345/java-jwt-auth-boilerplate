@@ -13,6 +13,6 @@ public class ContentController {
     @GetMapping("req/signup") // req mert adatokat kérek a frontedntől a backendbe (getmapping => figyeld és
                               // hallgassd ez. aporotot)
     public String signup() {
-        return "";
+        return "signup";
     }
 }
