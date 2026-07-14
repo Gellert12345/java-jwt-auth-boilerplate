@@ -1,5 +1,5 @@
 //connect to DB file(and maybe store data)
-package com.Model;
+package com.example.demo.Model;
 
 import lombok.Getter;
 import jakarta.persistence.Entity;
