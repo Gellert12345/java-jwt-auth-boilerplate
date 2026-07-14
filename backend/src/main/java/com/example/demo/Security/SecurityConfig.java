@@ -20,7 +20,15 @@ public class SecurityConfig {
                             .loginPage("/login").permitAll(); // permintAll => nem kell semmi ellenerőzés hogy elérjed
                 })
                 .authorizeHttpRequests(registry -> {
-                    registry.requestMatchers("/req/signup", "/css/**", "/js/**").permitAll();
+                    registry.requestMatchers(
+                            "/req/signup",
+                            "/css/**",
+                            "/js/**",
+                            "/login",
+                            "/signup",
+                            "/background.jpg"
+
+                ).permitAll();
                     registry.anyRequest().authenticated();
                 })
 
