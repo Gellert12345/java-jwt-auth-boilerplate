@@ -10,8 +10,8 @@ public class ContentController {
         return "login";
     }
 
-    @GetMapping("req/signup") // req mert adatokat kérek a frontedntől a backendbe (getmapping => figyeld és
-                              // hallgassd ez. aporotot)
+    @GetMapping("/req/signup") // req mert adatokat kérek a frontedntől a backendbe (getmapping => figyeld és
+                               // hallgassd ez. aporotot)
     public String signup() {
         return "signup";
     }
